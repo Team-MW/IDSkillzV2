@@ -48,7 +48,7 @@ const Contact = () => {
 
                 <div style={{ textAlign: 'center', marginTop: '4rem', color: 'rgba(255,255,255,0.6)' }}>
                     <p style={{ marginBottom: '0.5rem' }}>📍 6 Rue Aubert, 93200 Saint-Denis, France</p>
-                    <p>📧 contact@grow360.com</p>
+                    <p>📧 contact@idskillz.com</p>
                 </div>
             </div>
         </div>

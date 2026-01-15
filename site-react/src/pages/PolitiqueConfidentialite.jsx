@@ -12,7 +12,7 @@ const PolitiqueConfidentialite = () => {
 
                 <section style={{ marginBottom: '3rem' }}>
                     <p>
-                        La présente politique de confidentialité a pour but d'exposer aux utilisateurs du site <strong>GROW360</strong> :
+                        La présente politique de confidentialité a pour but d'exposer aux utilisateurs du site <strong>IDSKILLZ</strong> :
                         <ul>
                             <li>La manière dont sont collectées et traitées leurs données à caractère personnel.</li>
                             <li>Quels sont les droits des utilisateurs concernant ces données ;</li>
@@ -55,18 +55,18 @@ const PolitiqueConfidentialite = () => {
                 <section style={{ marginBottom: '3rem' }}>
                     <h2 style={{ color: 'white', marginBottom: '1.5rem', fontSize: '1.8rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>3. Responsable du traitement des données</h2>
                     <p>
-                        Le responsable du traitement des données est la société <strong>GROW360</strong>.
+                        Le responsable du traitement des données est la société <strong>IDSKILLZ</strong>.
                     </p>
                     <p style={{ marginTop: '0.5rem' }}>
                         Il peut être contacté de la manière suivante :<br />
-                        Par email : <strong>contact@grow360.com</strong>
+                        Par email : <strong>contact@idskillz.com</strong>
                     </p>
                 </section>
 
                 <section style={{ marginBottom: '3rem' }}>
                     <h2 style={{ color: 'white', marginBottom: '1.5rem', fontSize: '1.8rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>4. Transmission des données</h2>
                     <p>
-                        Les données personnelles collectées par le site ne sont transmises à aucun tiers, et ne sont traitées que par l’éditeur du site (l'équipe interne de GROW360) dans le cadre de la gestion de la relation client.
+                        Les données personnelles collectées par le site ne sont transmises à aucun tiers, et ne sont traitées que par l’éditeur du site (l'équipe interne de IDSKILLZ) dans le cadre de la gestion de la relation client.
                     </p>
                 </section>
 
@@ -90,7 +90,7 @@ const PolitiqueConfidentialite = () => {
                         <li><strong>Droit à la portabilité</strong> de ses données.</li>
                     </ul>
                     <p style={{ marginTop: '1rem' }}>
-                        Pour exercer ces droits, vous pouvez nous contacter à l'adresse suivante : <strong>contact@grow360.com</strong>. Nous nous engageons à répondre à votre demande dans un délai d'un mois.
+                        Pour exercer ces droits, vous pouvez nous contacter à l'adresse suivante : <strong>contact@idskillz.com</strong>. Nous nous engageons à répondre à votre demande dans un délai d'un mois.
                     </p>
                 </section>
 

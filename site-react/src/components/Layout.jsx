@@ -3,6 +3,9 @@ import { useLocation } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import ContactModal from './ContactModal';
+import WhatsAppButton from './WhatsAppButton';
+import ParticlesBackground from './ParticlesBackground';
+import PageTransition from './PageTransition';
 
 const Layout = ({ children }) => {
     const { pathname } = useLocation();
@@ -13,10 +16,13 @@ const Layout = ({ children }) => {
 
     return (
         <>
+            <PageTransition />
+            <ParticlesBackground />
             <Navbar />
             <main>{children}</main>
             <Footer />
             <ContactModal />
+            <WhatsAppButton />
         </>
     );
 };

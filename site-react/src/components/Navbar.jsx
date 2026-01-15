@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="container">
         <div className="nav-wrapper">
           <Link to="/" className="logo">
-            <img src={logo} alt="GROW360 Logo" style={{ height: '40px', width: 'auto' }} />
+            <img src={logo} alt="IDSKILLZ Logo" style={{ height: '40px', width: 'auto' }} />
           </Link>
           <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
             {/* Updated Navigation Items */}
