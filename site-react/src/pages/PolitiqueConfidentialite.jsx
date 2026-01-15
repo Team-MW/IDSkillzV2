@@ -6,60 +6,101 @@ const PolitiqueConfidentialite = () => {
     }, []);
 
     return (
-        <div className="page-wrapper" style={{ paddingTop: '120px', paddingBottom: '60px' }}>
-            <div className="container" style={{ maxWidth: '800px', color: 'rgba(255, 255, 255, 0.9)' }}>
-                <h1 className="section-title" style={{ textAlign: 'left', marginBottom: '3rem' }}>Politique de Confidentialité</h1>
+        <div className="page-wrapper" style={{ paddingTop: '120px', paddingBottom: '80px', background: '#0a0a0a', minHeight: '100vh' }}>
+            <div className="container" style={{ maxWidth: '900px', color: 'rgba(255, 255, 255, 0.9)', lineHeight: '1.8' }}>
+                <h1 className="section-title" style={{ textAlign: 'left', marginBottom: '3rem', fontSize: '2.5rem' }}>Politique de Confidentialité</h1>
 
-                <section style={{ marginBottom: '2.5rem' }}>
-                    <h2 style={{ color: 'white', marginBottom: '1rem', fontSize: '1.5rem' }}>1. Introduction</h2>
+                <section style={{ marginBottom: '3rem' }}>
                     <p>
-                        Chez GROW360, nous accordons une grande importance à la confidentialité de vos données. Cette politique vise à vous informer de la manière dont nous collectons, utilisons et protégeons vos informations personnelles lorsque vous utilisez notre site web.
+                        La présente politique de confidentialité a pour but d'exposer aux utilisateurs du site <strong>GROW360</strong> :
+                        <ul>
+                            <li>La manière dont sont collectées et traitées leurs données à caractère personnel.</li>
+                            <li>Quels sont les droits des utilisateurs concernant ces données ;</li>
+                            <li>Qui est responsable du traitement des données à caractère personnel collectées et traités ;</li>
+                            <li>À qui ces données sont transmises ;</li>
+                        </ul>
                     </p>
                 </section>
 
-                <section style={{ marginBottom: '2.5rem' }}>
-                    <h2 style={{ color: 'white', marginBottom: '1rem', fontSize: '1.5rem' }}>2. Collecte des données</h2>
-                    <p>
-                        Nous pouvons collecter les données suivantes lorsque vous utilisez notre formulaire de contact :
+                <section style={{ marginBottom: '3rem' }}>
+                    <h2 style={{ color: 'white', marginBottom: '1.5rem', fontSize: '1.8rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>1. Collecte de données personnelles</h2>
+                    <p style={{ marginBottom: '1rem' }}>
+                        Nous collectons les données suivantes via le formulaire de contact présent sur le site :
                     </p>
-                    <ul style={{ paddingLeft: '20px', marginTop: '0.5rem' }}>
-                        <li>Nom et prénom</li>
+                    <ul style={{ paddingLeft: '20px', marginBottom: '1rem' }}>
+                        <li>Nom et Prénom</li>
                         <li>Adresse email</li>
-                        <li>Numéro de téléphone (optionnel)</li>
-                        <li>Informations relatives à votre projet</li>
+                        <li>Contenu du message (pouvant contenir des informations professionnelles ou personnelles)</li>
+                    </ul>
+                    <p>
+                        Ces données sont collectées lorsque l'utilisateur effectue l'une des opérations suivantes sur le site :
+                    </p>
+                    <ul style={{ paddingLeft: '20px' }}>
+                        <li>Remplissage et envoi du formulaire de contact (« Contactez-nous » ou « Postuler »).</li>
                     </ul>
                 </section>
 
-                <section style={{ marginBottom: '2.5rem' }}>
-                    <h2 style={{ color: 'white', marginBottom: '1rem', fontSize: '1.5rem' }}>3. Utilisation des données</h2>
+                <section style={{ marginBottom: '3rem' }}>
+                    <h2 style={{ color: 'white', marginBottom: '1.5rem', fontSize: '1.8rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>2. Finalités du traitement</h2>
                     <p>
-                        Vos données sont utilisées uniquement dans le but de :
+                        Le traitement des données personnelles a pour finalité :
                     </p>
-                    <ul style={{ paddingLeft: '20px', marginTop: '0.5rem' }}>
-                        <li>Répondre à vos demandes de contact ou de devis</li>
-                        <li>Vous envoyer des informations sur nos services (avec votre consentement)</li>
-                        <li>Améliorer votre expérience utilisateur sur notre site</li>
+                    <ul style={{ paddingLeft: '20px', marginTop: '1rem' }}>
+                        <li><strong>Réponse aux demandes :</strong> Pour recontacter l'utilisateur suite à sa demande de devis, d'information ou de candidature.</li>
+                        <li><strong>Gestion de la relation prospect/client :</strong> Suivi des échanges commerciaux.</li>
+                        <li><strong>Statistiques :</strong> Analyse anonyme de la fréquentation du site (via des cookies non nominatifs).</li>
                     </ul>
                 </section>
 
-                <section style={{ marginBottom: '2.5rem' }}>
-                    <h2 style={{ color: 'white', marginBottom: '1rem', fontSize: '1.5rem' }}>4. Partage des données</h2>
+                <section style={{ marginBottom: '3rem' }}>
+                    <h2 style={{ color: 'white', marginBottom: '1.5rem', fontSize: '1.8rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>3. Responsable du traitement des données</h2>
                     <p>
-                        Nous ne vendons, n'échangeons ni ne transférons vos informations personnelles identifiables à des tiers. Cela n'inclut pas les tierces parties de confiance qui nous aident à exploiter notre site web, tant que ces parties conviennent de garder ces informations confidentielles.
+                        Le responsable du traitement des données est la société <strong>GROW360</strong>.
+                    </p>
+                    <p style={{ marginTop: '0.5rem' }}>
+                        Il peut être contacté de la manière suivante :<br />
+                        Par email : <strong>contact@grow360.com</strong>
                     </p>
                 </section>
 
-                <section style={{ marginBottom: '2.5rem' }}>
-                    <h2 style={{ color: 'white', marginBottom: '1rem', fontSize: '1.5rem' }}>5. Cookies</h2>
+                <section style={{ marginBottom: '3rem' }}>
+                    <h2 style={{ color: 'white', marginBottom: '1.5rem', fontSize: '1.8rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>4. Transmission des données</h2>
                     <p>
-                        Notre site utilise des cookies pour améliorer l'accès à notre site et identifier les visiteurs réguliers. Cependant, cette utilisation des cookies n'est en aucune façon liée à des informations personnelles identifiables sur notre site.
+                        Les données personnelles collectées par le site ne sont transmises à aucun tiers, et ne sont traitées que par l’éditeur du site (l'équipe interne de GROW360) dans le cadre de la gestion de la relation client.
                     </p>
                 </section>
 
-                <section style={{ marginBottom: '2.5rem' }}>
-                    <h2 style={{ color: 'white', marginBottom: '1rem', fontSize: '1.5rem' }}>6. Vos droits</h2>
+                <section style={{ marginBottom: '3rem' }}>
+                    <h2 style={{ color: 'white', marginBottom: '1.5rem', fontSize: '1.8rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>5. Durée de conservation</h2>
                     <p>
-                        Vous avez le droit de demander l'accès, la rectification ou la suppression de vos données personnelles. Pour exercer ce droit, veuillez nous contacter à l'adresse : contact@grow360.com.
+                        Les données personnelles collectées via le formulaire de contact sont conservées pour une durée maximale de <strong>3 ans</strong> à compter du dernier contact émanant de l'utilisateur, sauf si une relation commerciale s'établit (auquel cas les données sont conservées pour la durée de la relation contractuelle et les obligations légales afférentes).
+                    </p>
+                </section>
+
+                <section style={{ marginBottom: '3rem' }}>
+                    <h2 style={{ color: 'white', marginBottom: '1.5rem', fontSize: '1.8rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>6. Vos droits (Loi Informatique et Libertés & RGPD)</h2>
+                    <p>
+                        Conformément à la réglementation applicable, l'utilisateur possède les droits suivants :
+                    </p>
+                    <ul style={{ paddingLeft: '20px', marginTop: '1rem' }}>
+                        <li><strong>Droit d’accès</strong> et d'interrogation sur ses données personnelles;</li>
+                        <li><strong>Droit de rectification</strong> si les données sont inexactes;</li>
+                        <li><strong>Droit à l’effacement</strong> (droit à l’oubli);</li>
+                        <li><strong>Droit à la limitation</strong> du traitement;</li>
+                        <li><strong>Droit à la portabilité</strong> de ses données.</li>
+                    </ul>
+                    <p style={{ marginTop: '1rem' }}>
+                        Pour exercer ces droits, vous pouvez nous contacter à l'adresse suivante : <strong>contact@grow360.com</strong>. Nous nous engageons à répondre à votre demande dans un délai d'un mois.
+                    </p>
+                </section>
+
+                <section style={{ marginBottom: '3rem' }}>
+                    <h2 style={{ color: 'white', marginBottom: '1.5rem', fontSize: '1.8rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>7. Cookies</h2>
+                    <p>
+                        Le site peut avoir recours à la technique des « cookies ». Ces fichiers stockés sur votre ordinateur permettent d'améliorer la navigation ou d'analyser l'audience.
+                    </p>
+                    <p style={{ marginTop: '0.5rem' }}>
+                        L’utilisateur peut s’opposer à l’enregistrement de ces cookies en configurant son logiciel de navigation.
                     </p>
                 </section>
             </div>
