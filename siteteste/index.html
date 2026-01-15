@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROW360 - L'agence 360 qui construit ton image de demain</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">GROW360</div>
+                <ul class="nav-menu">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#postuler" class="btn-nav">Postuler</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🚀</span>
+                    <span class="badge-text">Agence #1 en croissance digitale</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">L'agence 360 qui</span>
+                    <span class="title-line highlight-text">construit ton image</span>
+                    <span class="title-line">de demain</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Une équipe de créatifs, stratèges et experts passionnés qui transforment tes idées en 
+                    <span class="highlight-subtitle">vrais résultats mesurables</span>.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-box">
+                        <div class="stat-value" data-target="500">0</div>
+                        <div class="stat-label">Projets réalisés</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value" data-target="98">0</div>
+                        <div class="stat-label">% Satisfaction</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value" data-target="24">0</div>
+                        <div class="stat-label">Heures de réponse</div>
+                    </div>
+                </div>
+
+                <div class="hero-cta-group">
+                    <a href="#contact" class="btn-primary btn-glow">
+                        <span class="btn-text">Réserver un appel gratuit</span>
+                        <span class="btn-icon">→</span>
+                    </a>
+                    <a href="#services" class="btn-secondary">
+                        <span class="btn-text">Découvrir nos services</span>
+                    </a>
+                </div>
+
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <span class="trust-icon">✓</span>
+                        <span>Consultation gratuite</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-icon">✓</span>
+                        <span>Réponse sous 24h</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-icon">✓</span>
+                        <span>Résultats garantis</span>
+                    </div>
+                </div>
+
+                <div class="hero-scroll-indicator">
+                    <div class="scroll-line"></div>
+                    <span>Scroll</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <p class="about-text">
+                Chez GROW360, nos actions sont pensées pour révéler le potentiel de votre marque. Notre force ? Avoir réuni des talents stratégiques pour façonner une communication cohérente, puissante et mémorable. On vous écoute, on s'imprègne de votre univers, et on active les leviers pour vous faire rayonner.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="services-background">
+            <div class="service-orb service-orb-1"></div>
+            <div class="service-orb service-orb-2"></div>
+        </div>
+        <div class="container">
+            <div class="services-header">
+                <h2 class="section-title">NOS Services</h2>
+                <p class="section-subtitle">Nous transformons vos idées en actions concrètes pour booster votre visibilité et votre croissance.</p>
+                <a href="#contact" class="section-link">Contactez-nous</a>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-service="audiovisuel">
+                    <div class="service-card-header">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">🎬</div>
+                            <div class="service-icon-glow"></div>
+                        </div>
+                        <h3>Audiovisuel</h3>
+                        <button class="service-toggle" aria-label="Toggle sub-services">
+                            <span class="toggle-icon">+</span>
+                        </button>
+                    </div>
+                    <p class="service-description">Une production sur-mesure qui sublime votre identité. De la scénarisation à la post-production, chaque projet est un concentré d'émotions et d'efficacité.</p>
+                    <div class="sub-services">
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">🎥</span>
+                            <div class="sub-service-content">
+                                <h4>Production vidéo</h4>
+                                <p>Spot publicitaire, film corporate, motion design</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">📸</span>
+                            <div class="sub-service-content">
+                                <h4>Photographie</h4>
+                                <p>Shooting produit, événementiel, portrait</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">✂️</span>
+                            <div class="sub-service-content">
+                                <h4>Post-production</h4>
+                                <p>Montage, étalonnage, effets visuels</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">🎙️</span>
+                            <div class="sub-service-content">
+                                <h4>Son & Audio</h4>
+                                <p>Enregistrement, mixage, sound design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="service-link">Demander un devis →</a>
+                </div>
+
+                <div class="service-card" data-service="web">
+                    <div class="service-card-header">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">💻</div>
+                            <div class="service-icon-glow"></div>
+                        </div>
+                        <h3>Sites Web</h3>
+                        <button class="service-toggle" aria-label="Toggle sub-services">
+                            <span class="toggle-icon">+</span>
+                        </button>
+                    </div>
+                    <p class="service-description">Création de sites web modernes, performants et optimisés pour convertir vos visiteurs en clients.</p>
+                    <div class="sub-services">
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">🌐</span>
+                            <div class="sub-service-content">
+                                <h4>Site vitrine</h4>
+                                <p>Design sur-mesure, responsive, SEO optimisé</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">🛒</span>
+                            <div class="sub-service-content">
+                                <h4>E-commerce</h4>
+                                <p>Boutique en ligne, paiement sécurisé, gestion stock</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">📱</span>
+                            <div class="sub-service-content">
+                                <h4>Application web</h4>
+                                <p>PWA, interface sur-mesure, API intégration</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">⚡</span>
+                            <div class="sub-service-content">
+                                <h4>Optimisation</h4>
+                                <p>Performance, SEO, conversion rate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="service-link">Demander un devis →</a>
+                </div>
+
+                <div class="service-card" data-service="graphisme">
+                    <div class="service-card-header">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">🎨</div>
+                            <div class="service-icon-glow"></div>
+                        </div>
+                        <h3>Graphisme</h3>
+                        <button class="service-toggle" aria-label="Toggle sub-services">
+                            <span class="toggle-icon">+</span>
+                        </button>
+                    </div>
+                    <p class="service-description">Identité visuelle, menus, supports print ou écrans chaque design est pensé pour refléter l'univers de votre marque avec précision, style et cohérence.</p>
+                    <div class="sub-services">
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">🎯</span>
+                            <div class="sub-service-content">
+                                <h4>Identité visuelle</h4>
+                                <p>Logo, charte graphique, branding</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">📄</span>
+                            <div class="sub-service-content">
+                                <h4>Print</h4>
+                                <p>Flyers, cartes de visite, affiches, menus</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">📱</span>
+                            <div class="sub-service-content">
+                                <h4>Digital</h4>
+                                <p>Bannières, réseaux sociaux, emailing</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">📦</span>
+                            <div class="sub-service-content">
+                                <h4>Packaging</h4>
+                                <p>Design emballage, étiquetage, branding</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="service-link">Demander un devis →</a>
+                </div>
+
+                <div class="service-card" data-service="impression">
+                    <div class="service-card-header">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">🖨️</div>
+                            <div class="service-icon-glow"></div>
+                        </div>
+                        <h3>Impression</h3>
+                        <button class="service-toggle" aria-label="Toggle sub-services">
+                            <span class="toggle-icon">+</span>
+                        </button>
+                    </div>
+                    <p class="service-description">Flyers, cartes de visite, menus, t-shirts nous imprimons tous vos supports avec une qualité professionnelle pour un rendu fidèle, durable et percutant.</p>
+                    <div class="sub-services">
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">📋</span>
+                            <div class="sub-service-content">
+                                <h4>Papeterie</h4>
+                                <p>Cartes de visite, flyers, brochures</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">👕</span>
+                            <div class="sub-service-content">
+                                <h4>Textile</h4>
+                                <p>T-shirts, sweats, casquettes personnalisées</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">🏷️</span>
+                            <div class="sub-service-content">
+                                <h4>Signalétique</h4>
+                                <p>Panneaux, adhésifs, bâches</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">📦</span>
+                            <div class="sub-service-content">
+                                <h4>Grand format</h4>
+                                <p>Bannières, roll-up, kakémonos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="service-link">Demander un devis →</a>
+                </div>
+
+                <div class="service-card" data-service="social">
+                    <div class="service-card-header">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">📱</div>
+                            <div class="service-icon-glow"></div>
+                        </div>
+                        <h3>Réseaux sociaux</h3>
+                        <button class="service-toggle" aria-label="Toggle sub-services">
+                            <span class="toggle-icon">+</span>
+                        </button>
+                    </div>
+                    <p class="service-description">Contenu visuel, planification, interactions nous animons vos réseaux au quotidien pour créer une vraie connexion avec votre audience et renforcer votre présence.</p>
+                    <div class="sub-services">
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">📸</span>
+                            <div class="sub-service-content">
+                                <h4>Création de contenu</h4>
+                                <p>Photos, vidéos, stories, reels</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">📅</span>
+                            <div class="sub-service-content">
+                                <h4>Planification</h4>
+                                <p>Calendrier éditorial, publication automatique</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">💬</span>
+                            <div class="sub-service-content">
+                                <h4>Community Management</h4>
+                                <p>Modération, réponse, engagement</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">📊</span>
+                            <div class="sub-service-content">
+                                <h4>Analytics</h4>
+                                <p>Reporting, analyse performance, ROI</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="service-link">Demander un devis →</a>
+                </div>
+
+                <div class="service-card" data-service="ads">
+                    <div class="service-card-header">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">📢</div>
+                            <div class="service-icon-glow"></div>
+                        </div>
+                        <h3>Ads</h3>
+                        <button class="service-toggle" aria-label="Toggle sub-services">
+                            <span class="toggle-icon">+</span>
+                        </button>
+                    </div>
+                    <p class="service-description">Campagnes de publicité payante sur Facebook, Instagram, Tiktok, Snapchat et X. Via du ciblage stratégique et des formats adaptés, nous atteignons avec performance vos objectifs de visibilité, d'engagement, de trafic et de conversion.</p>
+                    <div class="sub-services">
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">📘</span>
+                            <div class="sub-service-content">
+                                <h4>Facebook & Instagram</h4>
+                                <p>Campagnes ciblées, retargeting, conversion</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">🎵</span>
+                            <div class="sub-service-content">
+                                <h4>TikTok & Snapchat</h4>
+                                <p>Publicité native, influenceurs, génération Z</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">🔍</span>
+                            <div class="sub-service-content">
+                                <h4>Google Ads</h4>
+                                <p>Recherche, display, shopping, YouTube</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">📈</span>
+                            <div class="sub-service-content">
+                                <h4>Optimisation</h4>
+                                <p>A/B testing, ROI, conversion tracking</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="service-link">Demander un devis →</a>
+                </div>
+
+                <div class="service-card" data-service="local">
+                    <div class="service-card-header">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">📍</div>
+                            <div class="service-icon-glow"></div>
+                        </div>
+                        <h3>Marketing Local</h3>
+                        <button class="service-toggle" aria-label="Toggle sub-services">
+                            <span class="toggle-icon">+</span>
+                        </button>
+                    </div>
+                    <p class="service-description">Stratégies de marketing local pour développer votre présence géographique et attirer des clients près de chez vous.</p>
+                    <div class="sub-services">
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">🗺️</span>
+                            <div class="sub-service-content">
+                                <h4>Google My Business</h4>
+                                <p>Optimisation fiche, avis clients, SEO local</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">📍</span>
+                            <div class="sub-service-content">
+                                <h4>Géolocalisation</h4>
+                                <p>Stratégie multi-points, rayon d'action</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">📱</span>
+                            <div class="sub-service-content">
+                                <h4>Campagnes locales</h4>
+                                <p>Publicité géolocalisée, événements</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">⭐</span>
+                            <div class="sub-service-content">
+                                <h4>Gestion avis</h4>
+                                <p>Collecte, réponse, réputation en ligne</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="service-link">Demander un devis →</a>
+                </div>
+
+                <div class="service-card" data-service="influence">
+                    <div class="service-card-header">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">⭐</div>
+                            <div class="service-icon-glow"></div>
+                        </div>
+                        <h3>Influence</h3>
+                        <button class="service-toggle" aria-label="Toggle sub-services">
+                            <span class="toggle-icon">+</span>
+                        </button>
+                    </div>
+                    <p class="service-description">Sélection de profils, stratégie de diffusion, placements efficaces nous activons les bons influenceurs pour faire rayonner votre marque auprès d'un public ciblé.</p>
+                    <div class="sub-services">
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">🔍</span>
+                            <div class="sub-service-content">
+                                <h4>Recherche d'influenceurs</h4>
+                                <p>Audit, sélection, négociation</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">📝</span>
+                            <div class="sub-service-content">
+                                <h4>Stratégie de contenu</h4>
+                                <p>Brief créatif, storytelling, briefings</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">📊</span>
+                            <div class="sub-service-content">
+                                <h4>Suivi & Reporting</h4>
+                                <p>KPIs, engagement, ROI, analytics</p>
+                            </div>
+                        </div>
+                        <div class="sub-service-item">
+                            <span class="sub-service-icon">🤝</span>
+                            <div class="sub-service-content">
+                                <h4>Partenariats long terme</h4>
+                                <p>Ambassadeurs, contrats exclusifs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="service-link">Demander un devis →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="clients">
+        <div class="container">
+            <h2 class="section-title">NOS clients</h2>
+            <p class="section-subtitle">Nous collaborons avec des marques qui partagent notre exigence et notre vision du détail. Ensemble, nous construisons des projets durables, performants et créatifs.</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">0+</div>
+                    <div class="stat-label">Projets</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">0+</div>
+                    <div class="stat-label">Clients</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section class="branches">
+        <div class="container">
+            <h2 class="section-title">Une structure complète, avec des pôles dédiés à chaque enjeu de marque</h2>
+            <p class="section-subtitle">Nos branches expertes sont pensées pour offrir à chaque secteur des solutions sur-mesure, créatives, performantes et parfaitement alignées avec tes objectifs business.</p>
+            
+            <div class="branches-grid">
+                <div class="branch-card">
+                    <div class="branch-number">01</div>
+                    <h3>Foodisme</h3>
+                    <p>Foodisme accompagne les marques food à chaque étape de leur développement. De la stratégie à la création de contenu, nous concevons des campagnes qui renforcent votre identité, stimulent l'engagement et génèrent des résultats concrets.</p>
+                    <a href="#" class="service-link">Découvrir →</a>
+                </div>
+
+                <div class="branch-card">
+                    <div class="branch-number">02</div>
+                    <h3>LinkGrow</h3>
+                    <p>Transformez votre bio en moteur de conversion. Avec Linkgrow, chaque clic devient une opportunité de faire grandir votre communauté ou votre business.</p>
+                    <a href="#" class="service-link">Découvrir →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="cta-title">Prêt à passer à l'action ?</h2>
+            <a href="#contact" class="btn-primary">Contactez-nous</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Tous les services</a></li>
+                        <li><a href="#">Foodisme</a></li>
+                        <li><a href="#">LinkGrow</a></li>
+                        <li><a href="#services">Sites Web</a></li>
+                        <li><a href="#services">Audiovisuel</a></li>
+                        <li><a href="#services">Graphisme</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Liens</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#postuler">Postuler</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Réseaux</h4>
+                    <ul class="social-links">
+                        <li><a href="#" target="_blank">LinkedIn</a></li>
+                        <li><a href="#" target="_blank">Instagram</a></li>
+                        <li><a href="#" target="_blank">Tiktok</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <a href="#contact" class="btn-footer">Contactez-nous</a>
+                    <div class="footer-info">
+                        <p>6 Rue Aubert, 93200 Saint-Denis, France</p>
+                        <div class="footer-social">
+                            <a href="#" target="_blank">linkedin</a>
+                            <a href="#" target="_blank">instagram</a>
+                            <a href="#" target="_blank">Tiktok</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-talent">
+                    <p><strong>Si vous avez un talent, nous sommes peut-être votre nouvelle maison.</strong></p>
+                    <a href="#postuler" class="btn-postuler">POSTULER</a>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2025 GROW360. Tous droits réservés</p>
+                    <div class="footer-links">
+                        <a href="#">Mentions légales</a>
+                        <a href="#">Politique de confidentialité</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contactez-nous</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
