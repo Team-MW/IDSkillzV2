@@ -4,8 +4,7 @@ import PartnersMarquee from '../components/PartnersMarquee';
 import About from '../components/About';
 import Services from '../components/Services';
 import Clients from '../components/Clients';
-import Branches from '../components/Branches';
-import CTA from '../components/CTA';
+
 
 const Home = () => {
     return (
@@ -15,8 +14,7 @@ const Home = () => {
             <About />
             <Services />
             <Clients />
-            <Branches />
-            <CTA />
+
         </>
     );
 };

@@ -1,7 +1,10 @@
 import React, { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const ParticlesBackground = () => {
     const canvasRef = useRef(null);
+    const location = useLocation();
+    const is3DPage = location.pathname === '/3d';
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -9,7 +12,7 @@ const ParticlesBackground = () => {
 
         const ctx = canvas.getContext('2d');
         let particles = [];
-        const particleCount = 100; // Increased count for full page feel
+        const particleCount = 100;
         let animationFrameId;
 
         const resizeCanvas = () => {
@@ -19,6 +22,9 @@ const ParticlesBackground = () => {
 
         resizeCanvas();
         window.addEventListener('resize', resizeCanvas);
+
+        // Opacity multiplier based on page
+        const opacityFactor = is3DPage ? 0.1 : 1;
 
         class Particle {
             constructor() {
@@ -32,7 +38,7 @@ const ParticlesBackground = () => {
                 this.size = Math.random() * 3 + 2;
                 this.speedX = Math.random() * 0.5 - 0.25;
                 this.speedY = Math.random() * 0.5 - 0.25;
-                this.opacity = Math.random() * 0.5 + 0.5;
+                this.baseOpacity = Math.random() * 0.5 + 0.5;
             }
 
             update() {
@@ -46,7 +52,7 @@ const ParticlesBackground = () => {
             draw() {
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(102, 126, 234, ${this.opacity})`;
+                ctx.fillStyle = `rgba(102, 126, 234, ${this.baseOpacity * opacityFactor})`;
                 ctx.fill();
             }
         }
@@ -65,7 +71,7 @@ const ParticlesBackground = () => {
 
                     if (distance < 150) {
                         ctx.beginPath();
-                        ctx.strokeStyle = `rgba(102, 126, 234, ${0.8 * (1 - distance / 150)})`;
+                        ctx.strokeStyle = `rgba(102, 126, 234, ${(0.8 * (1 - distance / 150)) * opacityFactor})`;
                         ctx.lineWidth = 2;
                         ctx.moveTo(particles[i].x, particles[i].y);
                         ctx.lineTo(particles[j].x, particles[j].y);
@@ -93,7 +99,7 @@ const ParticlesBackground = () => {
             window.removeEventListener('resize', resizeCanvas);
             cancelAnimationFrame(animationFrameId);
         };
-    }, []);
+    }, [is3DPage]); // Re-run when page changes
 
     return (
         <canvas
@@ -105,7 +111,7 @@ const ParticlesBackground = () => {
                 width: '100%',
                 height: '100%',
                 zIndex: -1,
-                background: '#0a0a0a', // Base dark background
+                background: '#0a0a0a',
                 pointerEvents: 'none'
             }}
         />

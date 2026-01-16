@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import FAQ from '../components/FAQ';
 
 const Contact = () => {
     useEffect(() => {
@@ -51,6 +52,25 @@ const Contact = () => {
                     <p>📧 contact@idskillz.com</p>
                 </div>
             </div>
+
+            <FAQ data={[
+                {
+                    question: "Quels sont vos délais de réponse ?",
+                    answer: "Nous nous engageons à répondre à toutes les demandes sous 24 heures ouvrées."
+                },
+                {
+                    question: "Où êtes-vous situés ?",
+                    answer: "Nos bureaux sont situés à Saint-Denis (93200), mais nous travaillons avec des clients partout en France et à l'international."
+                },
+                {
+                    question: "Acceptez-vous les projets en freelance / sous-traitance ?",
+                    answer: "Oui, nous sommes ouverts aux collaborations avec d'autres agences ou entreprises nécessitant une expertise ponctuelle."
+                },
+                {
+                    question: "Comment se déroule le premier rendez-vous ?",
+                    answer: "C'est un échange gratuit de 30 minutes (téléphone ou visio) pour comprendre vos besoins, vos enjeux et voir comment nous pouvons vous aider."
+                }
+            ]} />
         </div>
     );
 };

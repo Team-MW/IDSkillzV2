@@ -34,14 +34,14 @@ const Footer = () => {
                             L'agence 360° qui transforme vos idées en résultats mesurables. Créativité, Stratégie, Performance.
                         </p>
                         <div className="footer-socials">
-                            <a href="#" target="_blank" rel="noopener noreferrer" className="social-pill">
-                                <span>LinkedIn</span>
+                            <a href="https://www.facebook.com/people/ID-Skillz/100087111806721/" target="_blank" rel="noopener noreferrer" className="social-pill">
+                                <span>Facebook</span>
                             </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer" className="social-pill">
+                            <a href="https://www.instagram.com/idskillz/" target="_blank" rel="noopener noreferrer" className="social-pill">
                                 <span>Instagram</span>
                             </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer" className="social-pill">
-                                <span>TikTok</span>
+                            <a href="https://www.google.com/maps/place/ID+SKILLZ+-+Agence+de+communication/@22.8970625,-94.698947,3z/data=!3m1!4b1!4m6!3m5!1s0x4ad1ff06a28c5e05:0xdc8fccc561a2f47b!8m2!3d30.6959409!4d-49.8171262!16s%2Fg%2F11sbbf_q2d?entry=ttu&g_ep=EgoyMDI0MTIxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="social-pill">
+                                <span>Google</span>
                             </a>
                         </div>
                     </div>

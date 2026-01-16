@@ -9,8 +9,8 @@
     --secondary-color: #ffffff;
     --accent-color: #007bff;
     --accent-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-    --text-color: #333333;
-    --text-light: #666666;
+    --text-color: #ffffff;
+    --text-light: #e0e0e0;
     --bg-light: #f8f9fa;
     --border-color: #e0e0e0;
     --transition: all 0.3s ease;
@@ -315,9 +315,9 @@ button {
     }
 }
 
-.hero-subtitle {
+.service-subtitle {
     font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-    color: rgba(255, 255, 255, 0.8);
+    color: #ffffff;
     margin-bottom: 3rem;
     max-width: 700px;
     margin-left: auto;
@@ -627,7 +627,7 @@ button {
 
 .about-text {
     font-size: clamp(1.1rem, 2vw, 1.3rem);
-    color: rgba(255, 255, 255, 0.9);
+    color: #ffffff;
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
@@ -700,6 +700,43 @@ button {
     margin-bottom: 4rem;
 }
 
+.service-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.service-title {
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    text-align: center;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Reusing shimmer animation class if applied */
+.shimmer-text {
+    animation: shimmer 3s ease-in-out infinite;
+    background-size: 200% auto;
+}
+
+.service-subtitle {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+/* Restoring section-title logic for non-hero sections */
 .section-title {
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 900;
@@ -983,11 +1020,13 @@ button {
     margin-bottom: 0.3rem;
 }
 
-.sub-service-content p {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.6);
-    margin: 0;
-    line-height: 1.5;
+.process-details li {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .service-link {
@@ -1959,19 +1998,22 @@ html {
         height: 24px;
     }
 }
+
 /* Make section backgrounds transparent/semi-transparent to show Global Particles */
-.hero, 
-.about, 
-.services, 
-.clients, 
-.branches, 
+.hero,
+.about,
+.services,
+.clients,
+.branches,
 .cta,
 .page-wrapper {
-    background: transparent !important; /* Force transparency */
+    background: transparent !important;
+    /* Force transparency */
 }
 
 /* Ensure background is visible but content is readable by adding slight dark overlays if needed */
-.services, .about {
+.services,
+.about {
     /* Slight tint if needed, or rely on glassmorphism cards */
     /* background: rgba(10, 10, 10, 0.4) !important; */
 }
@@ -2014,12 +2056,15 @@ html {
     0% {
         opacity: 0;
     }
+
     10% {
         opacity: 1;
     }
+
     80% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         pointer-events: none;
@@ -2031,14 +2076,17 @@ html {
         opacity: 0;
         transform: scale(0.8) translateY(20px);
     }
+
     20% {
         opacity: 1;
         transform: scale(1) translateY(0);
     }
+
     80% {
         opacity: 1;
         transform: scale(1.05);
     }
+
     100% {
         opacity: 0;
         transform: scale(1.2);
@@ -2048,15 +2096,18 @@ html {
 /* Alternating Backgrounds Logic */
 
 /* Define the "Glow/Dark" style based on Footer CTA preference */
-.services, .branches {
-    background: rgba(5, 5, 5, 0.85) !important; /* Dark but slightly translucent */
+.services,
+.branches {
+    background: rgba(5, 5, 5, 0.85) !important;
+    /* Dark but slightly translucent */
     position: relative;
     /* Ensure z-index allows particles below to be hidden or muted, 
        but user likely wants the "look" of the footer which implies the dark bg + glow */
 }
 
 /* Add the blue glow effect to these sections */
-.services::before, .branches::before {
+.services::before,
+.branches::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -2070,12 +2121,121 @@ html {
 }
 
 /* Ensure content is above the glow */
-.services .container, .branches .container {
+.services .container,
+.branches .container {
     position: relative;
     z-index: 2;
 }
 
 /* Explicitly keep others transparent to show global particles clearly */
-.hero, .about, .clients, .cta {
+.hero,
+.about,
+.clients,
+.cta {
     background: transparent !important;
+}
+
+/* Process Section Styles */
+.process-section {
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.process-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2.5rem;
+    border-radius: 16px;
+    height: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.process-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    transform: translateY(-5px);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.process-number {
+    font-size: 3rem;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(102, 126, 234, 0.5);
+    margin-bottom: 1.5rem;
+    line-height: 1;
+    font-family: 'Inter', sans-serif;
+}
+
+.process-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.process-description {
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.process-details {
+    list-style: none;
+    padding: 0;
+}
+
+.process-details li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
+}
+
+.process-details li::before {
+    content: '•';
+    color: #667eea;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Service Card Details - Added for brightness consistency */
+.service-card-detail {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    /* margin-bottom: 30px; Removed to let grid handle gap */
+}
+
+.service-card-detail:hover {
+    background: rgba(255, 255, 255, 0.07);
+    transform: translateY(-5px);
+    border-color: rgba(102, 126, 234, 0.5);
+}
+
+.service-card-detail h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.service-card-detail p {
+    color: rgba(255, 255, 255, 0.95);
+    /* Bright white */
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
 }
