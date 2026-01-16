@@ -2239,3 +2239,51 @@ html {
     margin-bottom: 1.5rem;
     font-size: 1.05rem;
 }
+
+/* Mobile Responsiveness Enhancements */
+@media (max-width: 768px) {
+    .hero {
+        padding: 120px 0 60px;
+        min-height: auto;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .service-title {
+        font-size: 2.5rem;
+    }
+
+    .tech-scroller {
+        gap: 2rem;
+    }
+
+    .faq-section {
+        padding: 40px 0;
+    }
+
+    /* Ensure Bento Grids don't overflow */
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Improve InteractiveIDE on mobile */
+    .interactive-ide-container {
+        flex-direction: column;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .stats {
+        gap: 1.5rem;
+    }
+
+    .hero-stats {
+        gap: 1.5rem;
+    }
+}

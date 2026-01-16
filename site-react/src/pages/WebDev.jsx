@@ -28,7 +28,7 @@ const TechStack = () => {
                             <React.Fragment key={i}>
                                 {["NEXT.JS", "TYPESCRIPT", "NODE.JS", "VERCEL", "TAILWINDCSS", "THREE.JS", "STRIPE", "REACT", "SUPABASE", "AWS", "GRAPHQL"].map((tech, idx) => (
                                     <div key={idx} style={{
-                                        fontSize: 'clamp(3rem, 6vw, 5rem)',
+                                        fontSize: 'clamp(2rem, 6vw, 5rem)',
                                         fontWeight: '900',
                                         color: 'transparent',
                                         WebkitTextStroke: '1px rgba(255,255,255,0.2)',
@@ -131,7 +131,7 @@ const Website = () => {
 
     return (
         <div style={{
-            flex: '1 1 400px',
+            flex: '1 1 300px',
             background: '#1e1e1e', // VS Code dark
             borderRadius: '12px',
             border: '1px solid rgba(255,255,255,0.1)',
@@ -305,7 +305,7 @@ const WebDev = () => {
 
                     <div style={{
                         display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
                         gap: '1.5rem',
                         gridAutoRows: 'minmax(300px, auto)'
                     }}>

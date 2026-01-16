@@ -9,7 +9,7 @@ const MoodboardGallery = () => {
                     <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Nos Créations</h2>
                     <p style={{ color: 'rgba(255,255,255,0.7)' }}>Un aperçu de notre savoir-faire visuel.</p>
                 </div>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
                     {/* Placeholder Cards for Portfolio - using CSS Gradients to simulate rich visuals */}
                     {[
                         { title: "Neo Bank App", gradient: "linear-gradient(135deg, #FF6B6B 0%, #556270 100%)", tag: "UI/UX Design" },
